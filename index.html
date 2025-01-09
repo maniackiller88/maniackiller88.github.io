@@ -1,37 +1,24 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ФИЗКУЛЬТ</title>
-    <style>
-        body {
-            margin: 0; /* Убираем отступы по умолчанию */
-            display: flex; /* Используем flexbox для центрирования */
-            justify-content: center; /* Центрируем по горизонтали */
-            align-items: center; /* Центрируем по вертикали */
-            min-height: 100vh; /* Занимаем всю высоту окна браузера */
-            background-color: #f0f0f0; /* Необязательный фон */
-            font-family: sans-serif; /* Необязательный шрифт */
-        }
-
-        h1 {
-            font-size: 10vw; /* Размер текста в 10% от ширины окна */
-            font-weight: bold; /* Жирный текст */
-            text-align: center; /* Текст по центру */
-            color: #333; /* Цвет текста */
-            margin: 0; /* Убираем отступы */
-        }
-
-        /*  Вариант с адаптивным размером текста (если 10vw слишком большой) */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 20vw; /* Увеличиваем размер на меньших экранах */
-            }
-        }
-    </style>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>ебливое говно</h1>
+    <div class="player">
+        <div class="now-playing">Now Playing: <span id="track-title">Nothing</span></div>
+        <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play-pause">▶️</button>
+            <button id="next">⏭</button>
+        </div>
+        <div class="progress-container">
+            <input type="range" id="progress" value="0" max="100">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
