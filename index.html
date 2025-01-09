@@ -1,131 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Фитнес-зал "Физкультура Гвардии"</title>
+    <title>ФИЗКУЛЬТ</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
+            margin: 0; /* Убираем отступы по умолчанию */
+            display: flex; /* Используем flexbox для центрирования */
+            justify-content: center; /* Центрируем по горизонтали */
+            align-items: center; /* Центрируем по вертикали */
+            min-height: 100vh; /* Занимаем всю высоту окна браузера */
+            background-color: #f0f0f0; /* Необязательный фон */
+            font-family: sans-serif; /* Необязательный шрифт */
         }
 
-        header {
-            background: #1e1e2f;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
+        h1 {
+            font-size: 10vw; /* Размер текста в 10% от ширины окна */
+            font-weight: bold; /* Жирный текст */
+            text-align: center; /* Текст по центру */
+            color: #333; /* Цвет текста */
+            margin: 0; /* Убираем отступы */
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        nav {
-            background: #333;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
-        }
-
-        nav a:hover {
-            color: #ff5722;
-        }
-
-        .hero {
-            background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
-            height: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-
-        .hero h2 {
-            font-size: 3em;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 1000px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        section h3 {
-            margin-top: 0;
-        }
-
-        footer {
-            background: #1e1e2f;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #ff5722;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-
-        .btn:hover {
-            background: #e64a19;
+        /*  Вариант с адаптивным размером текста (если 10vw слишком большой) */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20vw; /* Увеличиваем размер на меньших экранах */
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Фитнес-зал "Физкультура Гвардии"</h1>
-    </header>
-    <nav>
-        <a href="#about">О нас</a>
-        <a href="#services">Услуги</a>
-        <a href="#contact">Контакты</a>
-    </nav>
-    <div class="hero">
-        <h2>Стань сильнее каждый день</h2>
-    </div>
-    <section id="about">
-        <h3>О нас</h3>
-        <p>"Физкультура Гвардии" - это место, где каждый может достичь своих фитнес-целей. Наши профессиональные тренеры помогут вам в этом!</p>
-    </section>
-    <section id="services">
-        <h3>Наши услуги</h3>
-        <ul>
-            <li>Персональные тренировки</li>
-            <li>Групповые занятия</li>
-            <li>Кроссфит</li>
-            <li>Йога и пилатес</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h3>Контакты</h3>
-        <p>Адрес: ул. Спортивная, 10</p>
-        <p>Телефон: +7 (123) 456-78-90</p>
-        <p>Email: info@fi3kult.ru</p>
-        <a href="mailto:info@fi3kult.ru" class="btn">Написать нам</a>
-    </section>
-    <footer>
-        <p>&copy; 2025 Фитнес-зал "Физкультура Гвардии". Все права защищены.</p>
-    </footer>
+    <h1>ебливое говно</h1>
 </body>
 </html>
